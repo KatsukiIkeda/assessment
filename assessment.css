@@ -1,0 +1,110 @@
+/*
+body {
+  background-color: #04a6eb;
+  color: #fdffff;
+  width: 500px;
+  margin-right: auto;
+  margin-left: auto;
+}
+button {
+  padding: 5px 20px;
+  background-color: #337ab7;
+  color: #fdffff;
+  border-style: none;
+}
+input {
+  height: 20px;
+}
+*/
+
+/* ページ全体の背景色と基本フォント設定 */
+html {
+  background-color: #04a6eb; /* 明るい青の背景 */
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif;
+}
+
+/* コンテンツ全体をまとめる「カード」部分 */
+body {
+  width: 500px; /* 横幅は維持 */
+  margin: 40px auto; /* 上下に余白を追加して、左右中央揃え */
+  background-color: #fdffff; /* カード部分を白に */
+  color: #333; /* カード内の文字を濃いグレーに */
+  border-radius: 8px; /* 角を丸くする */
+  padding: 30px 40px; /* カード内部の余白 */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* 影をつけて立体感を出す */
+}
+
+/* 診断の見出し */
+h1 {
+  text-align: center;
+  color: #04a6eb; /* テーマカラーを見出しに使う */
+  border-bottom: 2px solid #f0f0f0; /* 薄い下線 */
+  padding-bottom: 10px;
+}
+
+/* "診断したい名前..." の説明文 */
+p {
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+/* ---- フォーム周りの改善 ---- */
+
+/* 名前入力ボックス */
+input[type="text"] {
+  width: 100%; /* 横幅いっぱいに */
+  height: auto; /* 高さを自動に */
+  padding: 12px 15px; /* 内側の余白をしっかり取る */
+  font-size: 16px;
+  border: 2px solid #ddd; /* 枠線 */
+  border-radius: 4px; /* 少し丸く */
+  box-sizing: border-box; /* paddingを含めてwidth: 100% にする */
+  margin-bottom: 15px; /* ボタンとの間に余白 */
+}
+
+/* 診断ボタン */
+button#assessment {
+  width: 100%; /* 横幅いっぱいに */
+  padding: 12px 20px;
+  background-color: #337ab7; /* 元の色を維持 */
+  color: #fdffff;
+  border-style: none;
+  border-radius: 4px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer; /* マウスを乗せたらポインターに */
+  transition: background-color 0.2s; /* ホバー時の色変化を滑らかに */
+}
+
+/* ボタンにマウスを乗せた時のスタイル */
+button#assessment:hover {
+  background-color: #286090; /* 少し濃い青に */
+}
+
+
+/* ---- 診断結果エリア ---- */
+
+#result-area {
+  margin-top: 25px;
+}
+
+/* "診断結果" の見出し */
+#result-area h3 {
+  border-bottom: 2px solid #04a6eb;
+  padding-bottom: 5px;
+  margin-bottom: 15px;
+}
+
+/* 診断結果の文章 */
+#result-area p {
+  font-size: 18px;
+  line-height: 1.7;
+  font-weight: bold;
+  color: #222;
+}
+
+/* ツイートエリア */
+#tweet-area {
+  margin-top: 20px;
+  text-align: center; /* ツイートボタンを中央に配置 */
+}
